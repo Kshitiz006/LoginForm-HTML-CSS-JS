@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  /* display: flex, which allows you to create flexible layouts with elements that you can align and distribute vertically or horizontally. */
+  display: flex;
+  /* The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container */
+  justify-content: center;
+  align-items: center;
+  background: url(../cover.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "roboto", sans-serif;
+}
+
+.container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 90%;
+  height: 87vh;
+  border: 5px solid whitesmoke;
+}
+
+.logout {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: underline;
+  top: 10px;
+  right: 0;
+  cursor: pointer;
+}
+
+.greeting {
+  font-family: "dosis";
+  font-size: 100px;
+  color: #fff;
+  font-weight: 800;
+}

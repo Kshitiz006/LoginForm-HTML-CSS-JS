@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  /* display: flex, which allows you to create flexible layouts with elements that you can align and distribute vertically or horizontally. */
+  display: flex;
+  /* The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container */
+  justify-content: center;
+  align-items: center;
+  background: url(../cover.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "roboto", sans-serif;
+}
+
+.form {
+  font-weight: 400;
+  color: white;
+  width: 400;
+  height: auto;
+}
+
+.heading {
+  opacity: 0;
+  font-size: 75px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+input,
+.submit-btn {
+  opacity: 0;
+  width: 100%;
+  height: 40px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: white;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+input::placeholder {
+  color: white;
+}
+input:focus,
+.submit-btn:hover {
+  background: white;
+  color: #000;
+}
+
+input:focus::placeholder {
+  color: #000;
+}
+
+.submit-btn {
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
+  margin: 50px auto 0;
+  opacity: 0;
+}
+
+.link {
+  opacity: 0;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+  display: block;
+  margin: 30px auto;
+}
+
+.link:hover {
+  color: white;
+}
+
+.alert-box {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 150px;
+  max-width: 90%;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background: rgb(255, 119, 119);
+  border-top: 10px solid rgb(255, 37, 37);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  font-family: "roboto", sans-serif;
+  text-align: center;
+  transition: 1s;
+}
